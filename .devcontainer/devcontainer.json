@@ -1,14 +1,14 @@
 {
-    "name": "Lean DevContainer on Ubuntu",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    // git がすぐに使えるようにする
-    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "name": "DevContainer on Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // git がすぐに使えるようにする
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   // vscode 拡張機能をインストールする
   "customizations": {
-    "vscode" : {
-      "extensions" : [
+    "vscode": {
+      "extensions": [
         "leanprover.lean4",
         "mhutchie.git-graph",
         "Tyriar.sort-lines",
@@ -17,8 +17,18 @@
         "juggernautjp.less-toml",
         "usernamehw.errorlens",
         "piousdeer.horizon-theme-vscode-default-token-colors",
-        "EditorConfig.EditorConfig"
+        "EditorConfig.EditorConfig",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
       ]
+    }
+  },
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "installTinyTex": true,
+      "installChromium": true,
+      "version": "latest"
     }
   }
 }
