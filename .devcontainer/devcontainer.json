@@ -1,0 +1,24 @@
+{
+    "name": "Lean DevContainer on Ubuntu",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // git がすぐに使えるようにする
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  // vscode 拡張機能をインストールする
+  "customizations": {
+    "vscode" : {
+      "extensions" : [
+        "leanprover.lean4",
+        "mhutchie.git-graph",
+        "Tyriar.sort-lines",
+        "yzhang.markdown-all-in-one",
+        "PKief.material-icon-theme",
+        "juggernautjp.less-toml",
+        "usernamehw.errorlens",
+        "piousdeer.horizon-theme-vscode-default-token-colors",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
+}
