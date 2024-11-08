@@ -2,9 +2,9 @@ project:
   type: book
 
 book:
-  title: "Control"
+  title: "制御理論ノート"
   author: "Mr. Hoge"
-  date: "11/1/2024"
+  date: "11/09/2024"
   chapters:
     - index.qmd
     - notebook/bucket_sim.ipynb
