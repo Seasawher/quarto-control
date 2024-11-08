@@ -35,7 +35,7 @@ jobs:
           cache: 'pip' # caching pip dependencies
 
       - name: Install dependencies
-        run: python pip install -r .devcontainer/requirements.txt
+        run: pip install -r .devcontainer/requirements.txt
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
