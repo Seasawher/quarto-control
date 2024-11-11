@@ -8,7 +8,7 @@ book:
   chapters:
     - index.qmd
     - src/control.ipynb
-    - src/bucket_sim.ipynb
+    - src/simulation.ipynb
 
 bibliography: references.bib
 
