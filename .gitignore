@@ -1,6 +1,7 @@
 .quarto/
 _book/
 /.quarto/
+__pycache__/
 
 /notebook/*
 !/notebook/*.ipynb
